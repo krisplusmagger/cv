@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Author: Vignesh Iyer                                 %
-% MS CSE ASU                                           %
+% Author: Xinyu Cao                                    %
+% B.S.E. Telecommunication Engineering, SDUST           %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass{resume} % Use the custom resume.cls style
@@ -8,9 +8,8 @@
 \begin{document}
 
 \introduction[
-    fullname=Xinyu cao,
+    fullname=Xinyu Cao,
     email=cao2xinyu@outlook.com,
-    phone=,
     linkedin=https://www.linkedin.com/in/xinyu-cao-704727231/,
     github=https://github.com/krisplusmagger
 ]
@@ -19,23 +18,23 @@
 
 \education{
     \educationItem[
-        university=Shandong University of Science and Technology{} {} ,
-        college=College of Electronic and Information Engineering{},
-        ,
+        university=Shandong University of Science and Technology,
+        college=College of Electronics and Information Engineering,
         graduation=September 2020 - June 2024(Expected),
         grade=84.58/100 GPA,
-        program=B.S.E.{ } Telecommunication Engineering,
-        coursework=Principles of Communication{,} Information Theory and Coding{,} Digital Signal Processing{,} Signals and Systems{,} Computer Network{,} Computer Systems{}     ]
+        program=B.S.E. Telecommunication Engineering,
+        coursework=Principles of Communication{,} Information Theory and Coding{,}	Digital Signal Processing{,}	Signals and Systems{,} Computer Network{,} Computer Systems
+    ]
 }
 
 \skills{
     \skillItem[
         category=Embedded Systems,
-        skills=STM32{,} STC15{,} DDS9959{,}	UART{,}	IIC{,} Proteus
+        skills=STM32{,}STC15{,} DDS9959{,}UART{,} IIC{,} SPI{,}
     ] \\
     \skillItem[
         category=Design and Modeling Tools,
-        skills=MATLAB{,} Numpy{,} Pandas{,} Tensorflow
+        skills=MATLAB{,}Proteus{,} Multisim{,} Numpy{,} Pandas, Tensorflow
     ] \\
     \skillItem[
         category=Programming,
@@ -45,88 +44,75 @@
         category=Technical skills,
         skills=Git{,} Unix
     ] \\
-      \skillItem[
+    \skillItem[
         category=English,
-        skills=IELTS 6.5{,}  CET-6 493{,}  CET-4 532
+        skills=IELTS 6.5{,} CET-6 493{,} CET-4 532
     ] \\
  
 }
 
-\begin{workSection}{Experience}
+\begin{workSection}{Research Experience}
 
-     
     \experienceItem[
-        company= TI Cup National Undergraduate Electronics Design Contest,
-        location=Jinan{} ,
+        company=TI Cup National Undergraduate Electronics Design Contest,
+        location=Jinan,
         position=Signal Separation Device,
-        duration=August 2023 
+        duration=August 2023
     ]
     \begin{itemize}
-        \itemsep -6pt {} 
-        \item FFT frequency domain measurement{,} Software Phase-Locked Loop{,} Operational Amplifier Circuit Design
-        \item Implemented a unity gain adder using OPA1612, encompassing schematic and PCB design. Conducted circuit simulations using Multisim, employed STM32F103ZE for ADC acquisition, FFT computation, and waveform identification. Achieved signal regeneration using AD9959 and AD9934. Employed a software phase-locked loop approach, incorporating AD620 and low-pass filters to maintain co-frequency and co-phase alignment between original and regenerated signals.
+        \itemsep -6pt
+        \item Designed and implemented a signal separation device incorporating FFT frequency domain measurement, Software Phase-Locked Loop, and Operational Amplifier Circuit Design.
+        \item Developed a unity gain adder using OPA1612, encompassing schematic and PCB design. Conducted circuit simulations using Multisim, employed STM32F103ZE for ADC acquisition, FFT computation, and waveform identification. Achieved signal regeneration using AD9959 and AD9934. Employed a software phase-locked loop approach, incorporating AD620 and low-pass filters to maintain co-frequency and co-phase alignment between original and regenerated signals.
+    \end{itemize}
+    
+    \experienceItem[
+        company=Lichuang Cup SDUST Electronic Design Competition,
+        location=Qingdao,
+        position=Basic Oscilloscope and Signal Generator,
+        duration=April 2023
+    ]
+    \begin{itemize}
+        \itemsep -6pt
+        \item Developed a basic oscilloscope using STM32 microcontroller, involving ADC, DAC, Direct Memory Access, and waveform recognition. Implemented sampling, quantization, and FFT for waveform analysis.
+    \end{itemize}
 
-       
-     \end{itemize}
-     
-      \experienceItem[
-        company= Lichuang Cup SDUST Electronic Design  Competition,
-        location=Qingdao{} ,
-        position= Basic oscilloscope and signal Generator,
-        duration=April 2023 
-    ]
-    \begin{itemize}
-        \itemsep -6pt {} 
-        \item ADC, DAC, Direct Memory Access{,} Waveform recognition 
-        \item Developed a basic oscilloscope using STM32 microcontroller Implemented sampling, and quantization, and utilized Fast Fourier Transform (FFT) for waveform analysis. Expertise in signal processing and troubleshooting.
-       
-     \end{itemize}
-     
 \end{workSection}
-
-\begin{workSection}{Academic projects}
-     \customItem[
-        title=DTMF System Simulation and Implementation
-        ,
-        duration=May 2023 - June 2023,
-        keyHighlight=Developed a new approach using ANN model to demodulate DTMF signals.
-     ]
-     \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {} 
-        \item This course design was based on Python, TensorFlow, and STM32 and implemented a DTMF system.
-        \item Using two STM32 boards to build real-time DTMF systems.
-        \item A DNN network was designed using TensorFlow, and its excellent performance was demonstrated compared to other recognition approaches, particularly in low signal-to-noise ratio conditions.
-     \end{itemize}
-
-     \customItem[
-        title=Modulation recognition using Conventional neural network,
-        duration=Spring 2023,
-        keyHighlight= Tensorflow{,} DNN{,} CNN{,} CLDNN
-     ]
-     \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {} 
-        \item Assessed signal samples datasets under low SNR to determine the possible types of modulation (Python{,} Numpy).
-        \item There are three proposed architectures - DNN{,} CNN{,} CLDNN which are trained and evaluated on RadioML Datasets.
-        \item Proving blind Convolutional Networks
-        on time series radio signal data are viable and work quite well.
-     \end{itemize}
+\begin{workSection}{Academic Projects}
 
     \customItem[
-        title= Digital Speech Signal Analysis and Recognition,
-        duration=December 2022 - January 2023,
-        keyHighlight=MFCC{,} MRMR{,} K-Nearest Neighbor{,}
-        MATLAB
-     ]
-     
-     \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {} 
-        \item In this design, the FSDD dataset(similar to MNIST dataset but in audio form) and various audio processing techniques were employed to extract feature vectors from 0 to 9-digit speech signals. These techniques include speech framing with windowing{,} Mel filters{,} MFCC{,} Gammatone cepstral coefficients{,} KNN.
+        title=DTMF System Simulation and Implementation,
+        duration=May 2023 - June 2023,
+        keyHighlight=Developed an innovative approach using ANN model for DTMF signal demodulation.
+    ]
+    \begin{itemize}
+        \itemsep -6pt
+        \item Implemented a real-time DTMF system using Python, TensorFlow, and STM32 microcontrollers.
+        \item Utilized two STM32 boards for building and testing the system's performance.
+        \item Designed a Deep Neural Network (DNN) model with TensorFlow, showcasing exceptional performance, especially in challenging low signal-to-noise ratio conditions.
+    \end{itemize}
 
-     \end{itemize} 
+    \customItem[
+        title=Modulation Recognition using Conventional Neural Networks,
+        duration=Spring 2023,
+        keyHighlight=Explored modulation recognition with deep learning aapproaches.
+    ]
+    \begin{itemize}
+        \itemsep -6pt
+        \item Analyzed signal samples under low Signal-to-Noise Ratio (SNR) to classify modulation types (Python, Numpy).
+        \item Developed and evaluated DNN, CNN, and CLDNN models on RadioML datasets.
+        \item Demonstrated the effectiveness of blind Convolutional Networks in classifying time series radio signal data.
+    \end{itemize}
+
+    \customItem[
+        title=Digital Speech Signal Analysis and Recognition,
+        duration=December 2022 - January 2023,
+        keyHighlight=Applied audio processing techniques for MFCC-based speech signal analysis.
+    ]
+    \begin{itemize}
+        \itemsep -6pt
+        \item Employed FSDD dataset and audio processing techniques (e.g., speech framing, Mel filters, MFCC, Gammatone cepstral coefficients, KNN) to extract feature vectors from 0 to 9-digit speech signals.
+        \item Utilized MATLAB for data analysis and signal processing to achieve accurate recognition and classification.
+    \end{itemize} 
   
 \end{workSection}
-
 \end{document}
